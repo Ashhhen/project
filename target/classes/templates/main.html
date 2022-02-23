@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GoodPharma - Internet Pharmacy</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+
+<div th:replace="general.html :: menu"></div>
+
+<div class="blocks column">
+    <div th:each="medicine : ${medicines}" class="medicine">
+        <div th:text="${medicine.title}" class="title"></div>
+
+        <div class="holder">
+            <pre>Information</pre>
+            <div class="block">
+                <div th:text="${medicine.description}" class="description"></div>
+            </div>
+        </div>
+
+        <div th:text="${medicine.manufacturer}" class="manufacturer"></div>
+        <div th:text="'Price: ' + ${medicine.price} + ' £'" class="price"></div>
+        <div th:text="'EAN-13: ' + ${medicine.ean}" class="ean"></div>
+        <div th:text="'Quantity: ' + ${medicine.quantity}" class="quantity"></div>
+        <a th:if="${logged == true}" th:href="@{/basket/add/{id}(id=${medicine.id})}" class = "button2">Add to basket</a>
+    </div>
+</div>
+
+<div id="logo" th:fragment="logo"><img src="backgroundB.png" id="background2"></div>
+</body>
+</html>

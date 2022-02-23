@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GoodPharma - Internet Pharmacy</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+
+<div th:replace="general.html :: menu"></div>
+
+<div id="content">
+    <div class="order-position">
+        <div class="title">Title</div>
+        <div class="manufacturer">Manufacturer</div>
+        <div class="quantity">Quantity</div>
+        <div class="piece-price">Unit price</div>
+        <div class="price">Total price</div>
+    </div>
+    <div th:each="position : ${basket.orderPositions}" class="order-position">
+        <div th:text="${position.medicine.title}" class="title"></div>
+        <div th:text="${position.medicine.manufacturer}" class="manufacturer"></div>
+        <div th:text="${position.quantity}" class="quantity"></div>
+        <div th:text="${position.medicine.price + '£'}" class="piece-price"></div>
+        <div th:text="${position.medicine.price * position.quantity + '£'}" class="price"></div>
+    </div>
+    <div class="order-position">
+        <div class="title"></div>
+        <div class="manufacturer"></div>
+        <div class="quantity"></div>
+        <div class="piece-price">Sum</div>
+        <div th:text="${sum + '£'}" class="price"></div>
+    </div>
+    <a href="/order" class="button3">Order</a>
+</div>
+
+<div id="logo" th:fragment="logo"><img src="backgroundD.jpg" id="background2"></div>
+</body>
+</html>

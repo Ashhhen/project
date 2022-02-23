@@ -1,0 +1,159 @@
+#background1 {
+    position:fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    min-width:100%;
+    min-height:100%;
+    opacity: 0.7;
+}
+
+#background2 {
+    position:fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    min-width:100%;
+    min-height:100%;
+    opacity: 0.4;
+}
+
+#background3 {
+    position:fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    min-width:100%;
+    min-height:100%;
+    opacity: 0.2;
+}
+
+#content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+}
+
+.blocks {
+    justify-content: space-around;
+}
+
+
+.blocks {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#menu a {
+    margin: 5px 10px;
+    text-decoration: none;
+    color: maroon;
+    transition: color 0.5s;
+    transition: background 0.5s;
+    padding: 5px 10px;
+    font-size: 26px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+#menu a:hover {
+    color: white;
+    background: purple;
+}
+
+.split {
+    border: 3px solid red;
+    border-radius: 100px;
+    height: 80%;
+    width: 45%;
+    margin-top: 2%;
+    position: fixed;
+}
+
+.left {
+    left: 2.5%;
+}
+
+.right {
+    right: 2.5%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.button1 {
+    color: black;
+    background: lightgreen;
+    border: 3px solid springgreen;
+    margin: 10px 0;
+    font-size: 28px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: border, color 0.5s;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+
+.button2 {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    margin-left: 40px;
+    font-size: 18px;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: border, color 0.5s;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+
+.button3 {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    margin-left: 40px;
+    font-size: 22px;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: border, color 0.5s;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+
+.button1:hover {
+    background: purple;
+    border: 3px solid purple;
+    color: white;
+}
+
+.button2:hover {
+    background: purple;
+    border: 2px solid purple;
+    color: white;
+}
+
+.button3:hover {
+    background: purple;
+    border: 2px solid purple;
+    color: white;
+}

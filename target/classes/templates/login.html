@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GoodPharma - Internet Pharmacy</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div th:replace="general.html :: menu"></div>
+
+<div id="content">
+    <form method="post" id="login-form">
+        <input type="text" placeholder="Login" name="login">
+        <br>
+        <input type="password" placeholder="Password" name="password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+    <a href="/register" class="button1">Create an account</a>
+</div>
+
+<div id="logo" th:fragment="logo"><img src="backgroundA.jpg" id="background1"></div>
+</body>
+</html>

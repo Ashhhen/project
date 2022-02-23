@@ -1,1 +1,2 @@
-pro_Liub
+# Projek koncowy - Oleksandr Liubich
+internet_pharmacy - name of base

@@ -1,0 +1,73 @@
+.medicine {
+    border: 3px solid maroon;
+    margin: 10px;
+    width: 45%;
+    padding: 5px;
+}
+
+.medicine .title {
+    color: red;
+    font-weight: 800;
+    font-size: 28px;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.medicine .manufacturer {
+    color: crimson;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.medicine .description {
+    color: crimson;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.medicine .price {
+    color: crimson;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.medicine .ean {
+    color: crimson;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+.medicine .quantity {
+    color: crimson;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+.medicine div {
+    margin: 5px;
+}
+
+.holder{
+    display: inline-block;
+    background: lightcoral;
+}
+.block{
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 37.5%;
+    left: 37.5%;
+    overflow: auto;
+    background: gainsboro;
+    display:none;
+}
+.holder:hover .block{
+    display:block;
+}
