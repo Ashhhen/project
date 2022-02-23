@@ -1,2 +1,2 @@
-# Projek koncowy - Oleksandr Liubich
-internet_pharmacy - name of base
+# Final project - Oleksandr Liubich
+name of base - internet_pharmacy
